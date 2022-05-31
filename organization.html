@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoPass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <!--js-->
+    <script src="assets/js/libs.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/tabby-ui.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <aside class="aside js-aside">
+                <div class="aside__pannel">
+                    <div class="logo">
+                        <img src="./assets/img/dashboard/icon/logo.png" alt="Logo">
+                        <div class="logo-text">
+                            Carbon Tracker
+                        </div>
+                    </div>
+                    <nav class="navbar__aside">
+                        <ul class="menu__items">
+                            <div class="line"></div>
+                            <div class="menu-link-block">
+                                <a href="./organization.html">
+                                    <li class="menu__item icon-adminpanel active">
+                                        Admin panel</li>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <a href="./datainput.html">
+                                <li class="menu__item icon-datainput">
+                                    Data inputs</li>
+                            </a>
+                            <div class="line"></div>
+                            <a href="./index.html">
+                                <li class="menu__item icon-dashboard">
+                                    Dashboard</li>
+                            </a>
+                            <div class="line"></div>
+                            <a href="./organizationcreate.html">
+                                <li class="menu__item icon-reports">
+                                    Reports</li>
+                            </a>
+                            <div class="line"></div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="aside__trigger">
+                    <button class="burger burger_aside js-burger" data-target=".js-aside"><span
+                            class="burger__spin"></span>
+                    </button>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="topline">
+                    <div class="topline__left topline__left_grow">
+                        <div class="nav-group">
+                            <div class="nav-group__mnu js-main-nav _nav">
+                                <nav class="main-nav">
+                                    <ul class="main-nav__list">
+                                        <li class="main-nav__itm"> <a class="main-nav__link active"
+                                                href="./organization.html">Sources of organizations</a></li>
+                                        <li class="main-nav__itm"> <a class="main-nav__link"
+                                                href="./emission.html">Sources of emissions</a></li>
+                                        <li class="main-nav__itm">
+                                            <div class="main-nav__link main-nav__link_container">
+                                                <div class="dropdown dropdown_mnu js-dropdown">
+                                                    <button class="dropdown__label">
+                                                        <div class="dropdown__txt">References</div>
+                                                    </button>
+                                                    <div class="dropdown__dropdown">
+                                                        <ul class="dropdown__list">
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Greenhouse gases</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Fuels</a></li>
+                                                            <li class="dropdown__itm"> <a class="dropdown__link">Fuel
+                                                                    types</a></li>
+                                                            <li class="dropdown__itm"> <a class="dropdown__link">Fuel
+                                                                    measurement units</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Productions</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Commodity nomenclature</a>
+                                                            </li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Relation products</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Materials</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Journal</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Quotas</a></li>
+                                                            <li class="dropdown__itm"> <a class="dropdown__link">Tier
+                                                                    methods</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Operators</a></li>
+                                                            <li class="dropdown__itm"> <a
+                                                                    class="dropdown__link">Countries</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="nav-group__burger">
+                                <button class="burger js-burger" data-target=".js-main-nav"><span
+                                        class="burger__spin"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topline__rigth">
+                        <div class="user-container">
+                            <div class="profile">
+                                <div class="profile-info">
+                                    <a href="./login.html"><img src="./assets/img/dashboard/icon/profile.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="profile-descr">
+                                    <div class="profile-descr-role">
+                                        Administrator
+                                    </div>
+                                    <div class="profile-descr-name">
+                                        Eastwood C.S.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__container">
+                    <div class="pages-title-block">
+                        <div class="pages-title">Organization Profile</div>
+                        <button class="btn">TEST</button>
+                    </div>
+                    <div class="block__content">
+                        <div class="block__content-img-organization"><img
+                                src="./assets/img/organizations/organizationsicn.svg" alt=""></div>
+                        <div class="block__content-title">Unfortunately, you have not added any organization yet. Let's
+                            start?</div>
+                        <button class="block__content-btn" data-modal-content=".js-modal-oragnization-add">
+                            Create Organization
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="modal-container" style="display: none;">
+        <div class="popup_content js-modal-btn-add">
+            <a href="#" class="popup__close js-modal-close"><img src="./assets/img/organizations/closePopup.png" alt=""></a>
+            <div class="popup__title">Add operator</div>
+            <form id="login" action="" class="form__items js-form">
+                <div class="form-item">
+                    <div class="popup__star">*</div>
+                    <label for="password-input " class="form__title">First Name</label>
+                    <input placeholder="First Name" onchange="add()" id="password-input"
+                        class="popup-form-input popup-input-add js-input-popup-add">
+                </div>
+                <div class="form-item">
+                    <div class="popup__star">*</div>
+                    <label for="password-input" class="form__title">Email</label>
+                    <input placeholder="Email" onchange="add()" id="password-input"
+                        class="popup-form-input js-input-popup-add">
+                </div>
+                <div class="form-item">
+                    <div class="popup__star">*</div>
+                    <label for="password-input" class="form__title">Post Code</label>
+                    <input placeholder="Post Code" onchange="add()" id="password-input"
+                        class="popup-form-input js-input-popup-add">
+                </div>
+                <div class="form-item">
+                    <div class="popup__star">*</div>
+                    <label for="password-input" class="form__title">Telephone</label>
+                    <input placeholder="Telephone" onchange="add()" id="password-input"
+                        class="popup-form-input js-input-popup-add">
+                </div>
+                
+                <button type="submit" onclick="window.location.href = '#popup';"
+                    class="form__btn-add form-btn-popup">Save</button>
+            </form>
+        </div>
+        <div class="popup_content js-modal-oragnization-add">
+            <a href="#" class="popup__close js-modal-close"><img src="./assets/img/organizations/closePopup.png"
+                    alt=""></a>
+            <div class="popup__title">Organization Profile</div>
+            <ul data-tabs>
+                <li><a data-tabby-default href="#Main">Main</a></li>
+                <li><a href="#Operators">Operators</a></li>
+            </ul>
+            <div id="Main">
+                <div class="tabs__block">
+                    <form id="login" action="" class="form__items js-form">
+                        <div class="form-item">
+                            <div class="popup__star">*</div>
+                            <label for="email-input" class="form__title">Organization Name</label>
+                            <input placeholder="Organization Name" onchange="test()" id="email-input"
+                                class="popup-form-input popup-input-error js-input">
+                        </div>
+                        <div class="form-item _select-popup">
+                            <div class="popup__star">*</div>
+                            <div for="input-label" class="select-label">Country</div>
+                            <div class="select">
+                                <div class="select__header">
+                                    <span class="select__current">Country</span>
+                                </div>
+                                <div class="select__body">
+                                    <div class="select__item">Germany</div>
+                                    <div class="select__item">United Kingdom</div>
+                                    <div class="select__item">Russian</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="popup__star">*</div>
+                            <label for="password-input" class="form__title">State/Province/Region</label>
+                            <input placeholder="State/Province/Region" onchange="test()" id="password-input"
+                                class="popup-form-input js-input">
+                        </div>
+                        <div class="form-item">
+                            <div class="popup__star">*</div>
+                            <label for="password-input" class="form__title">City</label>
+                            <input placeholder="City" onchange="test()" id="password-input"
+                                class="popup-form-input js-input">
+                        </div>
+                        <div class="form-item">
+                            <div class="popup__star">*</div>
+                            <label for="password-input" class="form__title">Post Code</label>
+                            <input placeholder="Post Code" onchange="test()" id="password-input"
+                                class="popup-form-input js-input">
+                        </div>
+                        <div class="form-item">
+                            <div class="popup__star">*</div>
+                            <label for="password-input" class="form__title">Street, Number</label>
+                            <input placeholder="Street, Number" onchange="test()" id="password-input"
+                                class="popup-form-input js-input">
+                        </div>
+                        <div class="form-item">
+                            <label for="password-input" class="form__title popup-label">Emissions Trading Permit
+                                Number</label>
+                            <input placeholder="Emissions Trading Permit Number" onchange="test()" id="password-input"
+                                class="popup-form-input">
+                        </div>
+                        <div class="error-message">
+                            <div class="error-message-first">Error message</div>
+                            <div class="error-message-second">Error message</div>
+                        </div>
+                        <button type="submit" class="form__btn form-btn-popup">Save</button>
+                    </form>
+                </div>
+            </div>
+            <div id="Operators">
+                <button class="add-btn" data-modal-content="js-modal-btn-add">+ Add</button>
+                <table class="oper-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Edit</th>
+                    </tr>
+                    <tr>
+                        <td>STEEL JOINT STOCK COMPANY </td>
+                        <td>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.875 9.78125V12.125H3.21875L10.1312 5.2125L7.7875 2.86875L0.875 9.78125ZM2.7 10.875H2.125V10.3L7.7875 4.6375L8.3625 5.2125L2.7 10.875ZM11.9437 2.51875L10.4813 1.05625C10.3563 0.93125 10.2 0.875 10.0375 0.875C9.875 0.875 9.71875 0.9375 9.6 1.05625L8.45625 2.2L10.8 4.54375L11.9437 3.4C12.1875 3.15625 12.1875 2.7625 11.9437 2.51875Z"
+                                    fill="#AFB1C2" />
+                            </svg>
+                            <a data-modal-content="js-modal-delete">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.75 10.875C0.75 11.5625 1.3125 12.125 2 12.125H7C7.6875 12.125 8.25 11.5625 8.25 10.875V3.375H0.75V10.875ZM2 4.625H7V10.875H2V4.625ZM6.6875 1.5L6.0625 0.875H2.9375L2.3125 1.5H0.125V2.75H8.875V1.5H6.6875Z"
+                                        fill="#AFB1C2" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STEEL JOINT STOCK COMPANY </td>
+                        <td> <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.875 9.78125V12.125H3.21875L10.1312 5.2125L7.7875 2.86875L0.875 9.78125ZM2.7 10.875H2.125V10.3L7.7875 4.6375L8.3625 5.2125L2.7 10.875ZM11.9437 2.51875L10.4813 1.05625C10.3563 0.93125 10.2 0.875 10.0375 0.875C9.875 0.875 9.71875 0.9375 9.6 1.05625L8.45625 2.2L10.8 4.54375L11.9437 3.4C12.1875 3.15625 12.1875 2.7625 11.9437 2.51875Z"
+                                    fill="#AFB1C2" />
+                            </svg>
+                            <a href="#popup__delete">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.75 10.875C0.75 11.5625 1.3125 12.125 2 12.125H7C7.6875 12.125 8.25 11.5625 8.25 10.875V3.375H0.75V10.875ZM2 4.625H7V10.875H2V4.625ZM6.6875 1.5L6.0625 0.875H2.9375L2.3125 1.5H0.125V2.75H8.875V1.5H6.6875Z"
+                                        fill="#AFB1C2" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STEEL JOINT STOCK COMPANY </td>
+                        <td> <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.875 9.78125V12.125H3.21875L10.1312 5.2125L7.7875 2.86875L0.875 9.78125ZM2.7 10.875H2.125V10.3L7.7875 4.6375L8.3625 5.2125L2.7 10.875ZM11.9437 2.51875L10.4813 1.05625C10.3563 0.93125 10.2 0.875 10.0375 0.875C9.875 0.875 9.71875 0.9375 9.6 1.05625L8.45625 2.2L10.8 4.54375L11.9437 3.4C12.1875 3.15625 12.1875 2.7625 11.9437 2.51875Z"
+                                    fill="#AFB1C2" />
+                            </svg>
+                            <a href="#popup__delete">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.75 10.875C0.75 11.5625 1.3125 12.125 2 12.125H7C7.6875 12.125 8.25 11.5625 8.25 10.875V3.375H0.75V10.875ZM2 4.625H7V10.875H2V4.625ZM6.6875 1.5L6.0625 0.875H2.9375L2.3125 1.5H0.125V2.75H8.875V1.5H6.6875Z"
+                                        fill="#AFB1C2" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="popup__delete" class="popup__delete">
+        <a href="#" class="popup__area"></a>
+        <div class="popup_body">
+            <div class="popup_content__delete ">
+                <a href="#" class="popup__close"><img src="./assets/img/organizations/closePopup.png" alt=""></a>
+                <div class="popup__title">Are you sure you want to delete? "STEEL JOINT STOCK COMPANY"</div>
+                <a class="delete-btn" href="#popup">Delete</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js" defer></script>
+    <script>
+        var tabs = new Tabby('[data-tabs]');
+    </script>
+
+    <script src="./assets/js/select.js"></script>
+</body>
+
+</html>

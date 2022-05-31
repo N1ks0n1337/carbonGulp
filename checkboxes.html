@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoPass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <!--js-->
+    <script src="./assets/js/libs.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+            <main class="main">
+                  <ul class="checkbox-container">
+                    <div class="checkbox-block">
+                    <li>
+                        <input id="c1" type="checkbox">
+                        <label class="checkbox-label" for="c1">Checkbox</label>
+                    </li>
+                    <li>
+                        <input id="c2" type="checkbox" checked>
+                        <label class="checkbox-label" for="c2">Checkbox</label>
+                    </li>
+                    </div>
+                    <div class="checkbox-block">
+                    <li>                    
+                        <input id="r1" type="radio" name="radio" value="1">
+                        <label class="checkbox-label" for="r1">Radio</label>
+                    </li>
+                    <li>
+                        <input id="r2" type="radio" name="radio" value="2" checked>
+                        <label class="checkbox-label" for="r2">Radio</label>
+                    </li>
+                    </div>
+                    <div class="checkbox-block">
+                    <li>
+                        <input id="s1" type="checkbox" class="switch">
+                        <label class="checkbox-label" for="s1">Switch</label>
+                    </li>
+                    <li>
+                        <input id="s2" type="checkbox" class="switch" checked>
+                        <label class="checkbox-label" for="s2">Switch</label>
+                    </li>
+                    </div>
+                </ul>
+
+                <ul class="checkbox-container">
+                  <div class="checkbox-block">
+                    <li>
+                        <input id="c1d" type="checkbox" disabled>
+                        <label class="checkbox-label" for="c1d">Checkbox</label>
+                    </li>
+                    <li>
+                        <input id="c2d" type="checkbox" checked disabled>
+                        <label class="checkbox-label" for="c2d">Checkbox</label>
+                    </li>
+                  </div>
+                  <div class="checkbox-block">
+                    <li>
+                        <input id="r1d" type="radio" name="radiod" value="1" disabled>
+                        <label class="checkbox-label" for="r1d">Radio</label>
+                    </li>
+                    <li>
+                        <input id="r2d" type="radio" name="radiod" value="2" checked disabled>
+                        <label class="checkbox-label" for="r2d">Radio</label>
+                    </li>
+                  </div>
+                  <div class="checkbox-block">
+                    <li>
+                        <input id="s1d" type="checkbox" class="switch" disabled>
+                        <label class="checkbox-label" for="s1d">Switch</label>
+                    </li>
+                    <li>
+                        <input id="s2d" type="checkbox" class="switch" checked disabled>
+                        <label class="checkbox-label" for="s2d">Switch</label>
+                    </li>
+                  </div>
+                </ul>
+
+
+                <form>
+
+                  <div class="checkbox-block">
+                    <div class="form-input form__cell form__cell_size1 _margin-class">
+                        <div class="label-input">Post code</div> 
+                        <label class="inpt ">
+                          <select class="inpt__field inpt__field_select js-select" name="month">
+                            <option value="" disabled selected>Country</option>
+                            <option value="germany">Germany</option>
+                            <option value="kingdom">United Kingdom</option>
+                            <option value="russian">Russian</option>
+                          </select>
+                        </label>
+                      </div>
+
+                      <div class="form-input form__cell form__cell_size1 _margin-class">
+                        <div class="label-input required-field">Post code</div> 
+                        <label class="inpt _margin-class">
+                          <select class="inpt__field inpt__field_select js-select" name="month">
+                            <option value="" disabled selected>Country</option>
+                            <option value="germany">Germany</option>
+                            <option value="kingdom">United Kingdom</option>
+                            <option value="russian">Russian</option>
+                          </select>
+                        </label>
+                      </div>
+
+                      <div class="form-input form__cell form__cell_size1 _margin-class">
+                        <div class="label-input">Post code</div> 
+                        <label class="input-field-error inpt _margin-class">
+                          <select class="inpt__field inpt__field_select js-select input-field-error" name="month">
+                            <option value="" disabled selected>Country</option>
+                            <option value="germany">Germany</option>
+                            <option value="kingdom">United Kingdom</option>
+                            <option value="russian">Russian</option>
+                          </select>
+                        </label>
+                      </div>
+                  </div>
+                  <div class="checkbox-block">
+                      <div class="form__row form__row_nowrap _margin-class"> 
+                        <div class="form__cell form__cell_grow">
+                          <label class="inpt inpt_icon-right"> 
+                            <div class="label-input">Post code</div>
+                            <input class="inpt__field" type="text" name="search" placeholder="Post Code"><span class="inpt__icn inpt__icn_close"> 
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form__row form__row_nowrap _margin-class"> 
+                        <div class="form__cell form__cell_grow">
+                          <label class="inpt inpt_icon-right inpt-label-block">
+                            <div class="label-input required-field">Post code</div> 
+                            <input class="inpt__field" type="text" name="search" placeholder="Post Code"><span class="inpt__icn inpt__icn_close"> 
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form__row form__row_nowrap _margin-class"> 
+                        <div class="form__cell form__cell_grow">
+                          <label class="inpt inpt_icon-right">
+                            <div class="label-input">Post code</div> 
+                            <input class="inpt__field input-field-error" type="text" name="search" placeholder="Post Code"><span class="inpt__icn inpt__icn_close"> 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="checkbox-block">
+                        <div class="search__box _margin-class">
+                        <div class="label-input">Post code</div> 
+                        <div class="search__container">
+                            <input type="search" id="search" placeholder="Search" />
+                            <div class="close"></div>
+                            <span class="icon"><i class="icon-loop"></i></span>
+                        </div>
+                        </div>
+
+                        <div class="search__box _margin-class">
+                        <div class="label-input required-field">Post code</div> 
+                        <div class="search__container">
+                            <input type="search" id="search" placeholder="Search" />
+                            <div class="close"></div>
+                            <span class="icon"><i class="icon-loop"></i></span>
+                        </div>
+                        </div>
+
+                        <div class="search__box _margin-class">
+                        <div class="label-input">Post code</div> 
+                        <div class="search__container input-field-error">
+                            <input type="search" id="search" placeholder="Search" />
+                            <div class="close"></div>
+                            <span class="icon"><i class="icon-loop"></i></span>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="checkbox-block">
+                        <div class="text-area-box _margin-class">
+                            <div class="label-input required-field">Post code</div> 
+                            <textarea class="textarea" placeholder="Enter a message"></textarea>
+                        </div>
+                        <div class="text-area-box _margin-class">
+                            <div class="label-input">Post code</div> 
+                            <textarea class="textarea input-field-error" placeholder="Enter a message"></textarea>
+                        </div>
+                        <div class="text-area-box _margin-class">
+                            <div class="label-input">Post code</div> 
+                            <textarea class="textarea" placeholder="Enter a message"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </main>
+
+    </div>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/select.js"></script>
+</body>
+
+</html>

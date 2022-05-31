@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoPass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <!--js-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/pareto.js"></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <aside class="aside js-aside">
+                <div class="aside__pannel">
+                    <div class="logo">
+                        <img src="./assets/img/dashboard/icon/logo.png" alt="Logo">
+                        <div class="logo-text">
+                            Carbon Tracker
+                        </div>
+                    </div>
+                    <nav class="navbar__aside">
+                        <ul class="menu__items">
+                            <div class="line"></div>
+                                <a href="./organization.html">
+                                    <li class="menu__item icon-adminpanel">
+                                    Admin panel</li>
+                                </a>
+                            <div class="line"></div>
+                                <a href="./datainput.html">
+                                    <li class="menu__item icon-datainput">
+                                    Data inputs</li>
+                                </a>
+                            <div class="line"></div>
+                            <div class="menu-link-block">
+                                <a href="./index.html">
+                                    <li class="menu__item icon-dashboard active">
+                                    Dashboard</li>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <a href="./organizationcreate.html">
+                                <li class="menu__item icon-reports">
+                                Reports</li>
+                            </a>
+                            <div class="line"></div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="aside__trigger">
+                    <button class="burger burger_aside js-burger" data-target=".js-aside"><span
+                            class="burger__spin"></span></button>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="topline">
+                    <div class="topline__left topline__left_grow">
+                        <div class="nav-group">
+                            <div class="nav-group__mnu js-main-nav">
+                                <nav class="main-nav">
+                                    <div class="header__navbar header-menu">
+                                        <ul class="header-menu-items">
+                                            <li class="header-menu-item header-item-active"><a href="./dashboard.html">Dashboard</a></li>
+                                            <li class="header-menu-item"><a href="./metrics.html">Metrics</a></li>
+                                            <li class="header-menu-item">Emissions</li>
+                                            <li class="header-menu-item">Fuels</li>
+                                            <li class="header-menu-item">Productions</li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="nav-group__burger">
+                                <button class="burger js-burger" data-target=".js-main-nav"><span
+                                        class="burger__spin"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topline__rigth">
+                        <div class="user-container">
+                            <div class="profile">
+                                <div class="profile-menu">
+                                    <img src="./assets/img/dashboard/icon/menu.png" alt="">
+                                </div>
+                                <div class="profile-info">
+                                    <img src="./assets/img/dashboard/icon/profile.png" alt="">
+                                </div>
+                                <div class="profile-descr">
+                                    <div class="profile-descr-role">
+                                        Administrator
+                                    </div>
+                                    <div class="profile-descr-name">
+                                        Eastwood C.S.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-wrapper">
+                    <div class="dashboard-title">
+                        Dashboard
+                    </div>
+                    <div class="dashboard-block">
+                        <div id="actual" class="actual"></div>
+                        <div class="dashboard-card-blocks">
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    Company
+                                </div>
+                                <div class="card-block-counter">
+                                    <div class="card-block-green">
+                                        +1
+                                    </div>
+                                    15
+                                </div>
+                            </div>
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    Division
+                                </div>
+                                <div class="card-block-counter">
+                                    <div class="card-block-green">
+                                        +5
+                                    </div>
+                                    5
+                                </div>
+                            </div>
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    k t. of CO2
+                                </div>
+                                <div class="card-block-counter">
+                                    <div class="card-block-red">
+                                        -0.1
+                                    </div>
+                                    897.8
+                                </div>
+                            </div>
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    Fuels
+                                </div>
+                                <div class="card-block-counter">
+                                    10
+                                </div>
+                            </div>
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    Plan/fact 2022
+                                </div>
+                                <div class="card-block-counter">
+                                    39%
+                                </div>
+                            </div>
+                            <div class="dashboard-card-block card-block">
+                                <div class="card-block-title">
+                                    From 12 months exeeding
+                                </div>
+                                <div class="card-block-counter">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

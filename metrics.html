@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EcoPass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta name="format-detection" content="telephone=no">
+  <link href="/favicon.png" rel="shortcut icon" type="image/png">
+  <!-- styles-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/iconfont.css">
+  <!--js-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/pareto.js"></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <aside class="aside js-aside">
+        <div class="aside__pannel">
+          <div class="logo">
+            <img src="./assets/img/dashboard/icon/logo.png" alt="Logo">
+            <div class="logo-text">
+              Carbon Tracker
+            </div>
+          </div>
+          <nav class="navbar__aside">
+            <ul class="menu__items">
+                <div class="line"></div>
+                    <a href="./organization.html">
+                        <li class="menu__item icon-adminpanel">
+                        Admin panel</li>
+                    </a>
+                <div class="line"></div>
+                    <a href="./datainput.html">
+                        <li class="menu__item icon-datainput">
+                        Data inputs</li>
+                    </a>
+                <div class="line"></div>
+                <div class="menu-link-block">
+                    <a href="./index.html">
+                        <li class="menu__item icon-dashboard active">
+                        Dashboard</li>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <a href="./organizationcreate.html">
+                    <li class="menu__item icon-reports">
+                    Reports</li>
+                </a>
+                <div class="line"></div>
+            </ul>
+        </nav>
+        </div>
+        <div class="aside__trigger">
+          <button class="burger burger_aside js-burger" data-target=".js-aside"><span
+              class="burger__spin"></span></button>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="topline">
+          <div class="topline__left topline__left_grow">
+            <div class="nav-group">
+              <div class="nav-group__mnu js-main-nav">
+                <nav class="main-nav">
+                  <div class="header__navbar header-menu">
+                    <ul class="header-menu-items">
+                      <li class="header-menu-item"><a href="./index.html">Dashboard</a></li>
+                      <li class="header-menu-item header-item-active"><a href="./metrics.html">Metrics</a></li>
+                      <li class="header-menu-item">Emissions</li>
+                      <li class="header-menu-item">Fuels</li>
+                      <li class="header-menu-item">Productions</li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="nav-group__burger">
+                <button class="burger js-burger" data-target=".js-main-nav"><span class="burger__spin"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="topline__rigth">
+            <div class="user-container">
+              <div class="profile">
+                <div class="profile-info">
+                  <a href="./login.html"><img src="./assets/img/dashboard/icon/profile.png" alt=""></a>
+                </div>
+                <div class="profile-descr">
+                  <div class="profile-descr-role">
+                    Administrator
+                  </div>
+                  <div class="profile-descr-name">
+                    Eastwood C.S.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics-block">
+          <div class="pages-title-block _metrics-block">
+            <div class="pages-title">Metrics</div>
+          </div>
+          <div class="dropdown">
+            <input type="text" class="textBox" placeholder="2022" readonly>
+            <div class="option">
+              <div onclick="show('2022')">2022</div>
+              <div onclick="show('2023')">2023</div>
+              <div onclick="show('2024')">2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="metrics-block-left">
+            <div id="sources" class="sources"></div>
+            <div class="metrics-block-left-bottom">
+              <div id="emissions" class="emissions"></div>
+              <div id="released" class="released"></div>
+              <div class="metrics-table">
+                <div class="metrics-table__title">STEEL JOINT STOCK COMPANY list by GHG</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>CO2 (Carbon dioxide)</td>
+                      <td>41 %</td>
+                      <td>4&nbsp;263</td>
+                    </tr>
+                    <tr>
+                      <td>CH4 (Methan)</td>
+                      <td>20 %</td>
+                      <td>2&nbsp;079</td>
+                    </tr>
+                    <tr>
+                      <td>(HFCs) Hydrofluorocarbons</td>
+                      <td>14 %</td>
+                      <td>1&nbsp;455</td>
+                    </tr>
+                    <tr>
+                      <td>N2O (Nitrous oxide)</td>
+                      <td>10 %</td>
+                      <td>1&nbsp;039</td>
+                    </tr>
+                    <tr>
+                      <td>NF3 (Nitrogen trifluoride)</td>
+                      <td>10%</td>
+                      <td>1&nbsp;039</td>
+                    </tr>
+                    <tr>
+                      <td>SF6 (Sulfur hexafluoride)</td>
+                      <td>5%</td>
+                      <td>519</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="metrics-block-right">
+            <div id="scope" class="scope"></div>
+            <div id="specific" class="specific"></div>
+            <div id="circle" data-value="100" class="circle"></div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+  <script>
+    function show(anything) {
+      document.querySelector('.textBox').value =
+        anything;
+    }
+
+    let dropdown = document.querySelector('.dropdown');
+    dropdown.onclick = function () {
+      dropdown.classList.toggle('active')
+    }
+  </script>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

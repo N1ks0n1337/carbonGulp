@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper-login">
+        <div class="login-form">
+            <div class="logo__container">
+                <img class="logotype" src="./assets/img/index/logoreg.png" alt="">
+                <h2 class="logo__title">Carbon<br />Tracker</h2>
+            </div>        
+            <form action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <div class="login-label" for="">Email</div>
+                    <input onchange="validBtn()" class="input-login js-input" placeholder="Email">
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                    <div class="error error-txt">Email can't be blank</div>
+
+                </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <div class="login-label" for="">Password</div>
+                    <input onchange="validBtn()" class="input-login js-input" type="password" placeholder="Password">
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                    <div class="error error-txt">Password can't be blank</div>
+                </div>
+            </div>
+            <button type="submit" class="form__btn">Login</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="./assets/js/valid.js"></script>
+</body>
+</html>
